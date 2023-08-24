@@ -56,7 +56,7 @@ public class Alugar
         {
             this.veiculo.setDisponivel(false);
             System.out.println("--------------------------------------------------------------------");
-            System.out.println("Contrato pode ser assinado "+this.locatario.nome+'!');
+            System.out.println("Contrato pode ser assinado "+this.locatario.getNome()+'!');
             System.out.println("Valor cobrado por dia R$70(*apartir de 5 dias terá o desconto de 7%)."); 
             System.out.print("Informe o total de dias: ");
             int d = t.nextInt();
@@ -67,7 +67,7 @@ public class Alugar
         {
             System.out.println("");
             System.out.println("-----------------------------------------------------------------------");
-            System.out.println( this.locatario.nome +", idade abaixo do permitido para alugar o veiculo placa: "+ this.veiculo.getPlaca());
+            System.out.println( this.locatario.getNome()+", idade abaixo do permitido para alugar o veiculo placa: "+ this.veiculo.getPlaca());
             System.out.println("-----------------------------------------------------------------------");
         }
     }

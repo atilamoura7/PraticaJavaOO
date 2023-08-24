@@ -8,9 +8,6 @@ public class Pessoa
     protected int idade;
     protected String cpf;
     private static ArrayList<Pessoa> pessoasCadastradas = new ArrayList<Pessoa>();
-    public Pessoa()
-    {
-    }
     public Pessoa (String nome, int idade, String cpf)
     {
         this.nome = nome;
@@ -42,7 +39,7 @@ public class Pessoa
     @Override
     public String toString() 
     {
-        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", cpf=" + cpf+'}';
+        return "Pessoa{" + "nome=" +this.getNome()+ ", idade=" + this.getIdade()+ ", cpf=" +this.getCpf()+'}';
     }
     public String getNome() 
     {

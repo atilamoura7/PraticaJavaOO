@@ -10,24 +10,6 @@ public class Carro
     private String placa;
     private boolean disponivel;
     private static ArrayList<Carro> carrosCadastrados = new ArrayList<Carro>();
-    public Carro()
-    {
-        Carro c1 = new Carro("honda", 4, "pok 7899");
-        Carro c2 = new Carro("renault", 4, "knm 1221");
-        Carro c3 = new Carro("fiat", 4, "abc 7899");
-        Carro n1 = new Carro("Hilux", 4,"pov 7p88");
-        carrosCadastrados.add(c1);
-        carrosCadastrados.add(c2);
-        carrosCadastrados.add(c3);
-        carrosCadastrados.add(n1);
-    }
-    /*public Carro()
-    {
-        this.setModelo(modelo);
-        this.setDisponivel(true);
-        cadastrarCarro();
-        carrosCadastrados.add(this);
-    }*/
     public Carro(String modelo, int portas,String placa)
     {
         //cadastrarCarro();
