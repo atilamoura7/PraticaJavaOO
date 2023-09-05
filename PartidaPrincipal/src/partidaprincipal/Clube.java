@@ -10,11 +10,11 @@ class Clube
 
     public Clube(String nome, int titulos, int vitorias, int derrotas, int empates)
     {
-        this.nome = nome;
-        this.titulos = titulos;
-        this.vitorias = vitorias;
-        this.derrotas = derrotas;
-        this.empates = empates;
+        this.setNome(nome);
+        this.setTitulo(titulos);
+        this.setVitorias(vitorias);
+        this.setDerrotas(derrotas);
+        this.setEmpates(empates);
     }
 
     @Override
