@@ -15,7 +15,7 @@ public class Atv1
         catch(NumberFormatException e)
         {
             //Tratamento para o caso de o usúario inserir algo diferente de um número.
-            JOptionPane.showMessageDialog(null,"Insira um número inteiro válido para a quantidade de alunos: "+e);
+            JOptionPane.showMessageDialog(null,"Insira um número inteiro válido para a quantidade de alunos. \nExceção: "+e);
         }
         try 
         {            
@@ -36,8 +36,8 @@ public class Atv1
         }
         catch(IndexOutOfBoundsException e)
         {
-            //Fazendo o tratamento para o caso do usúario tentar acessar um indice não existente na lista. 
-            JOptionPane.showMessageDialog(null,"Indice não encontrado no comprimento da Lista: "+e);
+            //Tratamento para o caso do usúario tentar acessar um indice não existente na lista.
+            JOptionPane.showMessageDialog(null,"Indice não encontrado no comprimento da Lista. \nExceção: "+e);
         }  
        }
 }
